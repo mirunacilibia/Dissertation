@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="800dp"
+    android:viewportWidth="360"
+    android:viewportHeight="800">
+
+    <!-- White background (fills screen) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0 H360 V800 H0 Z" />
+
+    <!-- Top wave using primaryLight -->
+    <path
+        android:fillColor="@color/primaryLight"
+        android:pathData="M0,0 L0,240 Q90,320 180,240 Q270,160 360,240 L360,0 Z" />
+</vector>

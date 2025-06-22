@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "876281715183",
+    "project_id": "dermacheck2001",
+    "storage_bucket": "dermacheck2001.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876281715183:android:54344fcd4be2fcfa203e1a",
+        "android_client_info": {
+          "package_name": "com.example.dermacheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876281715183-vhnt44q51qrn9gre0uid3o9vrodi84qe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxR4gcP4Lxk3v_zPYsfiI9znd4qnp_3Ho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876281715183-vhnt44q51qrn9gre0uid3o9vrodi84qe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

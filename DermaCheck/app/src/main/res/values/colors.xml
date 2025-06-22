@@ -1,0 +1,27 @@
+<resources>
+    <color name="primary">#37474f</color>
+    <color name="primaryExtraLight">#85A1AD</color>
+    <color name="primaryLight">#607D8B</color>
+    <color name="primaryDark">#2e373b</color>
+
+    <color name="secondary">#90A4AE</color>
+    <color name="secondaryLight">#CFD8DC</color>
+
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F5F5F5</color>
+    <color name="cardBackground">#E2EDF4</color>
+
+    <color name="onPrimary">#FFFFFF</color>
+    <color name="onSecondary">#000000</color>
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+
+    <color name="error">#E76D6D</color>
+    <color name="disabled">#BDBDBD</color>
+    <color name="divider">#E0E0E0</color>
+
+    <color name="neutral">#CCCCCC</color>
+    <color name="green">#84DC87</color>
+    <color name="warning">#F6D478</color>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface"
+    android:outlineProvider="background"
+    android:translationZ="8dp"
+    android:stateListAnimator="@null" >
+
+    <TextView
+        android:id="@+id/predictionText"
+        android:text="The predicted skin condition for this is..."
+        android:textColor="@color/textPrimary"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:text="Save this skin lesion"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryLight"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:text="Return to homepage"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryLight"
+        android:layout_marginBottom="12dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnMore"-->
+<!--        android:text="See more about this diagnosis"-->
+<!--        android:backgroundTint="@color/primaryLight"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+</LinearLayout>

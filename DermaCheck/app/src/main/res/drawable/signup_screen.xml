@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="200dp"
+    android:viewportWidth="360"
+    android:viewportHeight="200">
+
+    <!-- You can change the fillColor to any accent color you like -->
+    <path
+        android:fillColor="@color/primaryLight"
+        android:pathData="M0,0 L0,130 Q180,230 360,130 L360,0 Z" />
+</vector>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="32dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/condition_name"
+        android:background="@color/primaryLight"
+        android:titleTextColor="@color/onPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Melanoma"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="40dp">
+
+            <ProgressBar
+                android:id="@+id/loadingSpinner"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Type:"
+                android:background="@android:color/transparent"
+                android:textColor="@color/textSecondary"
+                android:paddingBottom="8dp"
+                android:paddingTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/condition_type"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/primaryDark"
+                android:paddingBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Locations:"
+                android:background="@android:color/transparent"
+                android:textColor="@color/textSecondary"
+                android:paddingBottom="8dp"
+                android:paddingTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/condition_locations"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/primaryDark"
+                android:paddingBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/condition_description"
+                android:textSize="18sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/primaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Image placeholders -->
+            <LinearLayout
+                android:id="@+id/imageContainer"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- ImageViews will be dynamically added here -->
+
+            </LinearLayout>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Appearance:"
+                android:background="@android:color/transparent"
+                android:textColor="@color/textSecondary"
+                android:paddingBottom="8dp"
+                android:paddingTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/condition_appearance"
+                android:textSize="16sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/primaryDark"
+                android:paddingBottom="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="Treatment:"
+                android:background="@android:color/transparent"
+                android:textColor="@color/textSecondary"
+                android:paddingBottom="8dp"
+                android:paddingTop="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/condition_treatment"
+                android:textSize="18sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/primaryDark"
+                android:layout_marginBottom="32dp"
+                android:paddingBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

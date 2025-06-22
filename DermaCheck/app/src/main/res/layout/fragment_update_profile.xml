@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/top_section_background">
+
+    <!-- Top Section: Profile Image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_background"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:clipToOutline="true"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <Button
+            android:id="@+id/addImageButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@id/profileImage"
+            android:layout_alignEnd="@id/profileImage"
+            android:backgroundTint="@color/primaryExtraLight"
+            android:text="+"
+            android:paddingHorizontal="4dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="8dp"
+            android:textColor="@android:color/white"
+            android:contentDescription="Add profile picture"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/loadingSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <!-- Form: Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full name:"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="start" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your full name"
+            android:textColor="@color/primaryLight"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Form: Age -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age:"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="start" />
+
+        <EditText
+            android:id="@+id/ageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your age"
+            android:textColor="@color/primaryLight"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            android:inputType="number" />
+
+        <!-- Form: Gender (Spinner) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textColor="@color/primaryDark"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="start" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryLight"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primaryLight"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>

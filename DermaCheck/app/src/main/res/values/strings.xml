@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DermaCheck</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="welcome_text">Welcome to DermaCheck!</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_add">Add lesion</string>
+    <string name="title_information">Information</string>
+    <string name="title_account">Account</string>
+    <string name="add_image_instructions">Select a body part, then take a clear photo of the spot. Make sure the spot is centered and fills the image.</string>
+    <string name="body_part_default">Select a body part</string>
+    <string name="continue_button">Continue</string>
+    <string name="title_activity_image_preview">ImagePreviewActivity</string>
+    <string name="learn_more_about_this_diagnosis"><u>Learn more about this diagnosis</u></string>
+</resources>
